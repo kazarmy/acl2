@@ -25116,6 +25116,7 @@ evaluated.  See :DOC certify-book, in particular, the discussion about ``Step
                                                    *the-live-state*)
                                      *wormhole-status-alist*))))
                     `(fix-trace ',(f-get-global 'trace-specs *the-live-state*))
+                    `(setq *trace-level* ,*trace-level*)
                     `(setf (car (quote ,own-cons)) t)
                     'state))))
 
